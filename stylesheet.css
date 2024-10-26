@@ -1,13 +1,18 @@
 h1 {
-font-family: 'Vadher'
+font-family: 'Vadher';
+  font-size: 46px;
+  color: black;
 }
 
 h2 {
-font-family: 'Vadher'
+font-family: 'Vadher';
+  color: black
 }
 
 body {
-  font-family: 'Aptos'
+  font-family: 'Aptos';
+font-size: 20px;
+color: #3A3B3C
 }
 
 main {
