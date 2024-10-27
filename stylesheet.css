@@ -1,20 +1,30 @@
 h1 {
 font-family: 'Vadher';
-  font-size: 32px;
+  font-size: 46px;
   color: black;
 }
 
 h2 {
 font-family: 'Vadher';
-font-size: 28px;
-  color: black
+  color: black;
+    text-align: center
+}
+
+h3 {
+font-family: 'Vadher';
+  color: black;
+    text-align: center
 }
 
 body {
   font-family: 'Aptos';
 font-size: 20px;
-color: #3A3B3C
+color: #3A3B3C;
+  text-align:center
 }
+
+p {
+text-align: justify}
 
 main {
   max-width: 1000px;
@@ -48,13 +58,6 @@ ul {
 	box-sizing: border-box;
 }
 
-.thirtysixty {
-    display: flex;
-    width: 95%; /* Ensures full screen width */
-    align-items: center;
-    justify-content: center
-}
-
 a:link { 
   text-decoration: none;
   color: #C45607;
@@ -68,6 +71,20 @@ a:hover {
 } 
 a:active { 
   text-decoration: none; 
+}
+
+.thirtysixty {
+    display: flex;
+    width: 95%; /* Ensures full screen width */
+    align-items: center;
+    justify-content: center
+}
+
+.sixtythirty {
+    display: flex;
+    width: 95%; /* Ensures full screen width */
+    align-items: center;
+    justify-content: center;
 }
 
 /* First column - 33% */
