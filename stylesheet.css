@@ -24,7 +24,11 @@ color: #3A3B3C;
 }
 
 p {
-text-align: justify}
+text-align: center}
+
+div{
+  text-align: center
+}
 
 main {
   max-width: 1000px;
@@ -40,7 +44,7 @@ main {
   max-width: 800px;
   padding: 0 20px;
    /* I dont understand why but padding is keeping the content centered */
-  margin: 80px 50px auto;
+  margin: 80px auto;
 }
 
 ul {
@@ -109,6 +113,18 @@ a:active {
     .column-33, .column-66 {
         flex: 0 0 100; /* Stack columns on smaller screens */
     }
+}
+
+.image-container {
+    max-width: 100%; /* Ensures the container doesn't exceed the page width */
+    display: flex;    /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    margin: 0 auto;  /* Center the container itself */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto;    /* Maintains aspect ratio */
 }
 
 @font-face{font-family:LS;font-style:normal;font-weight:400;font-display:fallback;src:url('LSRegular.otf') format('opentype');}
