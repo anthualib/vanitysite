@@ -80,14 +80,14 @@ a:active {
 
 .thirtysixty {
     display: flex;
-    width: 95%; /* Ensures full screen width */
+    width: 100%; /* Ensures full screen width */
     align-items: center;
     justify-content: center
 }
 
 .sixtythirty {
     display: flex;
-    width: 95%; /* Ensures full screen width */
+    width: 100%; /* Ensures full screen width */
     align-items: center;
     justify-content: center;
 }
