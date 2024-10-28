@@ -61,6 +61,20 @@ ul {
 	padding: 25px 117.6px; /* Add some padding if needed */
 	width: 100%; /* Ensure full width */
 	box-sizing: border-box;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #C45607;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 30px;
 }
 
 a:link { 
