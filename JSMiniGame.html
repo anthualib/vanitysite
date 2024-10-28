@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>About Anthony</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<style>
+.vs {
+    display: flex;
+    flex-direction: row; /* Boxes side by side */
+    justify-content: center;
+    gap: 10px; /* Space between boxes */
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.box {
+    display: flex;
+    flex-direction: column; /* Stack text content vertically */
+    border: 2px solid #333; /* Add border line with color and thickness */
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px
+}
+
+.box p {
+    margin: 2px 0;
+  
+  </style>
+  <script src="Minigame.js" defer></script>
+</head>
+  
+<body>
+
+
+  <main> <!-- Using this to have a different style than heading -->
+<a href="JSMiniGame.html" class="button" style="color:white; text-align:left; display:block; width:fit-content; margin-left:0;"><strong>Back</strong></a>
+    <h1>JS Minigame</h1>
+
+<div style="border: 2px solid #C45607; padding: 20px; margin: 10px; border-radius: 30px;background-color:#EAEAEA">
+<h2 class>Dinnertime!</h2>
+<p>You come home, hungry after a long day. You open the fridge. It is completely empty, except a lone, but appetizing jar of pickles. The lid looks especially stuck on there...
+
+What do you do?</p>
+
+    <div id = "reward"></div>
+  
+<div class="vs">
+    <div class="box"><h2 id="HeroName"></h2>
+<p>Health: <span id="HeroHealth"></span> HP</p>
+<p>Strength: <span id="HeroStrength"></span></p>
+<p>Defense: <span id="HeroDefense"></span></p></div>
+    <div class="box"><h2 id="PickleName"></h2>
+<p>Health: <span id="PickleHealth"></span> HP</p>
+<p>Strength: <span id="PickleStrength"></span></p>
+<p>Defense: <span id="PickleDefense"></span></p></div>
+</div>
+
+
+  
+<button id="fight">Open the jar</button>
+
+<button id="dryhands">Dry your hand</button>
+
+<button id="giveup">Give up</button>
+</body>
+</div>
