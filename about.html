@@ -17,13 +17,17 @@
                 <ul class="navmenu">
                     <li><a href="/index.html">Profile</a></li>
                     <li><a href="/writing.html">Writing</a></li>
-                    <li><button class="button"><a href="https://www.library.wisc.edu/">UW Libraries</a></button></li>
+                    <li><a href="https://www.library.wisc.edu/" class="bigbutton">UW Libraries</a></button></li>
                 </ul>
             </div>
         </nav>    
     </header>
 <div class="three-column-grid">
     <div class="sidecolumn">
+        <div class="float">
+        <div class="backbutton">
+            <a href="/index.html" class="button">← Back</a>
+        </div>
         <div class="jump">
             Jump to...
             <ul>
@@ -34,8 +38,10 @@
                 <li><a href="#madison">Madison, WI</a></li>
             </ul>
         </div>
+        </div>
     </div>
     <main>
+        <div class="mobileexclude">
         <h1 class="logo"><a href="/index.html">Anthony Hua</a></h1>
         <img class="profilepic" src="images/profile.jpeg">
         <p class="bio">Hiya! My name is Anthony Hua! I am a full-time library employee at UW-Madison’s Memorial Library, with a love of public services and student supervising. I am also pursuing a Master’s in Library and Information Science, where I am currently exploring my interests in research support and data analysis.</p>
@@ -46,8 +52,14 @@
             <p>/</p>
             <li><a href="/career.html">Career Path</a></li>
         </ul>
+        <div class="threedots"></div>
+        </div>
+        <div class="mobileinclude backbutton">
+            <a href="/index.html" class="button">← Back</a>
+        </div>
 
-        <!-- Below is the content for tnis page-->
+
+                <!-- Below is the content for tnis page-->
         <h2 id="childhood">About Me</h2>
         <h3>Childhood</h3>
         <div class="columns">
@@ -65,20 +77,27 @@
             </div>
             <div class="column-33"><img src="/images/twins.jpeg" style="width: 290px";></div>
         </div>
+
+        <div class="onedot"></div>
        <div>
-        <h2 id="redlands">Places I've Lived<br>(The Eras of my Life)</h2>
-        <img src="/images/redlands.png"style="width: 466px" id="redlands">
-        <h3>Redlands, California</h3>
-        <p>The city of Redlands itself is a desert-y suburb <em>right</em> at the very edge of the LA basin. It’s charming downtown introduced me to the notion of supporting local businesses. Being seated at the foot of the San Bernardino mountains meant there was ample hiking and camping close by!</p>
-        <p>I attended the University of Redlands for my undergrad, where I received a Bachelor of Science in Chemistry. I am grateful to have the opportunity to do a research project on the topics of environmental chemistry and microbiology. This involved spending a semester in the East Sierra Nevadas, collecting glacial samples and studying watersheds.</p>
-        <img src="/images/eugene.jpg" style="width: 447px" id="eugene">
-        <h3>Eugene, Oregon</h3>
-        <p>After college, I visited my best friend in Eugene and immediately fell in love with the city. Moving there was a very abrupt, very risky decision. Started off unemployed, I three jobs, all related to my field of interest! I simultaneously worked at a community college resource center, a public library, and a tutoring center. I attribute the hard work I did here to kick-starting my career in higher education and libraries.</p>
-        <p>Eugene is notable for the Willamette, a river spanning length of a 13-lane highway, that splits the town in half, and phenomenal bike infrastructure that connects pedestrian life. While developing quickly, the city has remained committed to protecting its strong urban boundaries. Because of this, it is nestled between miles of dense state forest, making it a prime location for outdoor activity of all kinds. The state has the highest amount of missing persons for a reason!</p>
-        <img src="/images/madison.jpeg" style="width: 428px" id="madison">
-        <h3>Madison, Wiscosnin</h3>
-        <p>I live in Madison and work full-time at the University of Wisconsin-Madison Libraries. I am also attending the iSchool, where I am pursuing an MA in Library and Information Studies. You can read more about what I am doing here on my <a href="currentroles.html" data-type="page" data-id="156">Current Roles page</a>.</p>
-        <p>The city of Madison should win a reward for “most interesting place that the rest of the country doesn’t really know about”. The city is home to the state capitol, a major four-year university, and a charming downtown, all stuffed on a narrow strip of land between two lakes. Also notable are the phenomenal parks, and the extensive bike trail converted from former railway. It’s because of this that the League of American Bicyclists has labeled Madison one of the most bikeable cities in the US</p>
+        <h3 id="redlands">Places I've Lived<br>(The Eras of my Life)</h3>
+
+            <img src="/images/redlands.png" id="redlands">
+            <h4>Redlands, California</h4>
+            <p>The city of Redlands itself is a desert-y suburb <em>right</em> at the very edge of the LA basin. It’s charming downtown introduced me to the notion of supporting local businesses. Being seated at the foot of the San Bernardino mountains meant there was ample hiking and camping close by!</p>
+            <p>I attended the University of Redlands for my undergrad, where I received a Bachelor of Science in Chemistry. I am grateful to have the opportunity to do a research project on the topics of environmental chemistry and microbiology. This involved spending a semester in the East Sierra Nevadas, collecting glacial samples and studying watersheds.</p>
+            <div class="onedot"></div>
+            <img src="/images/eugene.jpg" id="eugene">
+            <h4>Eugene, Oregon</h4>
+            <p>After college, I visited my best friend in Eugene and immediately fell in love with the city. Moving there was a very abrupt, very risky decision. Started off unemployed, I three jobs, all related to my field of interest! I simultaneously worked at a community college resource center, a public library, and a tutoring center. I attribute the hard work I did here to kick-starting my career in higher education and libraries.</p>
+            <p>Eugene is notable for the Willamette, a river spanning length of a 13-lane highway, that splits the town in half, and phenomenal bike infrastructure that connects pedestrian life. While developing quickly, the city has remained committed to protecting its strong urban boundaries. Because of this, it is nestled between miles of dense state forest, making it a prime location for outdoor activity of all kinds. The state has the highest amount of missing persons for a reason!</p>
+            <div class="onedot"></div>
+
+            <img src="/images/madison.jpeg" id="madison">
+            <h4>Madison, Wiscosnin</h4>
+            <p>I live in Madison and work full-time at the University of Wisconsin-Madison Libraries. I am also attending the iSchool, where I am pursuing an MA in Library and Information Studies. You can read more about what I am doing here on my <a href="currentroles.html" data-type="page" data-id="156">Current Roles page</a>.</p>
+            <p>The city of Madison should win a reward for “most interesting place that the rest of the country doesn’t really know about”. The city is home to the state capitol, a major four-year university, and a charming downtown, all stuffed on a narrow strip of land between two lakes. Also notable are the phenomenal parks, and the extensive bike trail converted from former railway. It’s because of this that the League of American Bicyclists has labeled Madison one of the most bikeable cities in the US</p>
+            <div class="threedots"></div>
        </div>
        
 
@@ -86,6 +105,13 @@
         <div class="sidecolumn">
         </div>
   </div>
+
+  <footer>
+    <div>
+    <p>Build by <a href="/about.html">Me</a> from scratch in raw HTML and CSS. Deployed through <a href="https://github.com/anthualib/vanitysite">Github</a></p>
+    <p>This website began as a project site for LIS 640 – Web Development, taught by David M. at UW-Madison. The primary goals of this class is to learn the methods and tools for creating/maintaining secure and interactive web content while building fundamental knowledge of HTML, CSS, and javascript.</p>
+    </div>
+</footer>
 
 </body>
 </html>
