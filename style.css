@@ -41,7 +41,15 @@
     --longshadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 780px) {
+
+    .mobileinclude {
+    display:none;
+    }
+
+    .mobileexclude {
+        display: block;
+    }
 
     /*page formatting*/
     main {
@@ -106,18 +114,23 @@ h1 {
 h2 {
     color: var(--black);
     font-family: var(--title-font);
+    font-size: 30px;
+    margin: 10px 0px 10px;
 }
 
 h3 {
     color: var(--black);
     font-family: var(--title-font);
+    font-size: 22px;
     margin: 10px 0px 0px;
+    
 }
 
 h4 {
     font-family: var(--title-font);
     color: var(--black);
     margin: 10px 0px 0px;
+    font-size: 18x;
 }
 
 .logo a {
@@ -146,20 +159,16 @@ h4 {
     transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
 }
 
-
 a {
     color: var(--orange);
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
 }
 
 a:hover {
     color: var(--orange);
     text-decoration: none;
-    text-shadow: none;
     border-bottom-color: var(--orange);
-    transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
 }
 
 body {
@@ -172,11 +181,30 @@ body {
     padding: 10px 20px 10px;
 }
 
+.onedot{
+    border: 0;
+    border-top: 10px dotted lightgrey; /* Dotted line */
+    margin: 40px auto 30px;   
+    width: 20px;
+}
+
+.threedots{
+    border: 0;
+    border-top: 10px dotted lightgrey; /* Dotted line */
+    margin: 50px auto 30px;   
+    width: 75px;            
+}
+
+.container {
+    margin: 20px 0px 50px;
+}
+
 /*Images*/
 
 img {
     border-radius: 30px;
     box-shadow: var(--longshadow);
+    width: 60%;
 }
 
 .socials img {
@@ -224,7 +252,7 @@ nav {
   font-family: var(--title-font);
   justify-content: center; /* Centers the entire menu within its container */
   align-items: center; /* Vertically centers items */
-  font-size: 1.8vw;
+  font-size: 26px;
 }
 
 .navmenu2{
@@ -239,14 +267,16 @@ nav {
     font-size: 24px;
     }
 
-    .jump {
-        margin: 0px auto;
-        padding: 0px 20px 0px;
-        top: 0;
+    .float {
+        top: 80px;
         position: sticky;
         z-index: 10;
         height: 10em;
-        top: 100px;
+    }
+
+    .jump {
+        margin: 0px auto;
+        padding: 20px 20px 0px;
         font-size: 12px;
         text-align: left;
         line-height: 1.7;
@@ -259,6 +289,41 @@ nav {
     }
 
   .button {
+    display: inline-block;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    padding: 5px 10px; /* Padding for the button */
+    border-color: #be5103;
+    border-radius:5px;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: var(--longshadow);
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+    }
+
+
+.button:hover {
+    display: inline-block;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    padding: 5px 10px; /* Padding for the button */
+    border-color: #be5103;
+    border-radius:5px;
+    border-width: 3px;
+    border-style: solid;
+    transform: translate(4px, 4px);
+    box-shadow: var(--shadow);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bigbutton {
+    display: inline-block;
+    font-size: 20px;
+    font-family: var(--title-font);
     background-color: var(--orange);
     color: white;
     border: none; /* No border */
@@ -268,28 +333,34 @@ nav {
     border-width: 3px;
     border-style: solid;
     box-shadow: var(--longshadow);
-    font-size: 16px; /* Text size */
-    cursor: pointer; /* Pointer cursor on hover */
     transition: transform 0.5s ease, box-shadow 0.5s ease;
      }
 
-.button:hover {
-    transform: translate(4px, 4px);
+.bigbutton:hover {
+    font-size: 20px;
+    font-family: var(--title-font);
+    background-color: var(--orange);
+    color: white;
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-color: #be5103;
+    border-radius:5px;
+    border-width: 3px;
+    border-style: solid;
     box-shadow: var(--shadow);
+    transform: translate(4px, 4px);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.button a {
-    color: white;
-    font-size: 1.5vw;
-    font-family: var(--title-font);
+/*Socials Spread*/
+.socials {
+    margin: 35px 0px 20px
 }
 
-/*Socials Spread*/
 .sociallist{
     list-style-type: none; /* Removes bullets */
     padding: 0;
-    margin: 0px;
+    margin: 24px 0px 24px;
     display: flex; /* Makes the list horizontal */
     gap: 50px; /* Adds spacing between items */
     justify-content: center; /* Centers the entire menu within its container */
@@ -354,10 +425,19 @@ nav {
     color: var(--black);
 }
 
+footer {
+    margin: 0px auto;
+    padding: 0px 100px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size:12px
+}
+
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
     
     .three-column-grid {
     display: grid;
@@ -378,8 +458,8 @@ nav {
         max-width: 480px;
     }
     
-      main p {
-        padding: 10px 0px 10px;
+    main p {
+        padding: 0px 0px 1px;
     }
 
     h1 {
@@ -398,7 +478,7 @@ nav {
     h3 {
         color: var(--black);
         font-family: var(--title-font);
-        margin: 10px 0px 0px;
+        margin: 1-px 0px 0px;
     }
     
     h4 {
@@ -505,7 +585,7 @@ nav {
       .navmenu2{
         list-style-type: none; /* Removes bullets */
         padding: 0;
-        margin: 0;
+        margin: 0px 10px 0px;
         display: flex; /* Makes the list horizontal */
         font-family: var(--title-font);
         justify-content: center; /* Centers the entire menu within its container */
@@ -513,46 +593,61 @@ nav {
         font-size: 24px;
         }
         .navmenu2 li{
-        width:10px;
+        
         }
         
       .navmenu2 p{
-        display:none
+        display:none;
       }
     
 
       img {
         border-radius: 30px;
         box-shadow: var(--longshadow);
-        width: 100%
+        width: 90%;
     }
 
     .button {
-        background-color: var(--orange);
+        display: inline-block;
         color: white;
-        border: none; /* No border */
+        background-color: var(--orange);
+        border: none;
         padding: 5px 10px; /* Padding for the button */
         border-color: #be5103;
         border-radius:5px;
-        border-width: px;
+        border-width: 3px;
         border-style: solid;
         box-shadow: var(--longshadow);
-        font-size: 16px; /* Text size */
         cursor: pointer; /* Pointer cursor on hover */
         transition: transform 0.5s ease, box-shadow 0.5s ease;
-         }
+    
+        }
+    
     
     .button:hover {
+        display: inline-block;
+        color: white;
+        background-color: var(--orange);
+        border: none;
+        padding: 5px 10px; /* Padding for the button */
+        border-color: #be5103;
+        border-radius:5px;
+        border-width: 3px;
+        border-style: solid;
         transform: translate(4px, 4px);
         box-shadow: var(--shadow);
         transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
     
-    .button a {
-        color: white;
-        font-size: 14px;
-        font-family: var(--title-font);
-    }
+
+
+    .sticky {
+        position: sticky;
+        z-index: 10;
+        top: 40px;
+        text-align: left;
+        margin:0px 10px;
+        }
     
     .socials img {
         border-radius: 0px;
@@ -574,4 +669,61 @@ nav {
         width: 50px;
     }
 
+    .mobileexclude {
+        display: none;
+    }
+
+    .mobileinclude {
+    }
+
+    .backbutton {
+        position: sticky;
+        z-index: 10;
+        top: 40px;
+        text-align: left;
+        margin:0px 10px;
+    }
+
+    .borderbox {
+        border-color: #be5103;
+        border-radius: 33px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 0px 20px 0px;
+        box-shadow: var(--longshadow);
+        margin: 10px 0px 0px;
+    }
+    
+    .borderboxgreen {
+        border-color: var(--green);
+        border-radius: 33px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 10px 10px 10px;
+        box-shadow: var(--longshadow);
+        margin: 10px 0px 10px;
+    }
+
+    footer {
+        margin: 0px auto;
+        padding: 0px 10px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        font-size:12px
+    }
+
+    .onedot{
+        border: 0;
+        border-top: 10px dotted lightgrey; /* Dotted line */
+        margin: 40px auto 30px;   
+        width: 20px;
+    }
+    
+    .threedots{
+        border: 0;
+        border-top: 10px dotted lightgrey; /* Dotted line */
+        margin: 50px auto 30px;   
+        width: 75px;            
+    }
     }
