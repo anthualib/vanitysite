@@ -205,12 +205,27 @@ img {
     border-radius: 30px;
     box-shadow: var(--longshadow);
     width: 60%;
+    margin: 0 auto
 }
 
 .socials img {
     border-radius: 0px;
     width: 30px;
     box-shadow: none;
+
+}
+
+.profile-link {
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.profile-link img {
+    display: block;
+    margin: 0 auto; /* Adjust spacing here */
+    width:40px;
 }
 
 .profilepic {
@@ -658,7 +673,7 @@ footer {
     .sociallist{
         list-style-type: none; /* Removes bullets */
         padding: 0;
-        margin: 0px;
+        margin: 40px 0px 20px;
         display: flex; /* Makes the list horizontal */
         gap: 80px; /* Adds spacing between items */
         justify-content: center; /* Centers the entire menu within its container */
@@ -726,4 +741,18 @@ footer {
         margin: 50px auto 30px;   
         width: 75px;            
     }
-}
+
+    .profile-link {
+        font-size: 18px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .profile-link img {
+        display: block;
+        margin: 0px auto; /* Adjust spacing here */
+        width: 60px;
+    }
+    }
