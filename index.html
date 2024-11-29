@@ -8,20 +8,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script src="index.js"></script>
-
     <header>
-        <nav id="top">
-            <div class="navleft"></div>
-            <div class="navright"> 
-                <ul class="navmenu">
-                    <li><a href="/index.html">Profile</a></li>
-                    <li><a href="/writing.html">Writing</a></li>
-                    <li><a href="https://www.library.wisc.edu/" class="bigbutton">UW Libraries</a></button></li>
-                </ul>
-            </div>
-        </nav>    
-    </header>
+        <div id="headercontainer">
+        </div>
+     </header>
 <div class="three-column-grid">
     <div class="sidecolumn"></div>
     <main>
@@ -29,17 +19,22 @@
         <img class="profilepic" src="images/profile.jpeg">
         <p class="bio">Hiya! My name is Anthony Hua! I am a full-time library employee at UW-Madison’s Memorial Library, with a love of public services and student supervising. I am also pursuing a Master’s in Library and Information Science, where I am currently exploring my interests in research support and data analysis.</p>
         <ul class="navmenu2">
-            <li><a href="/about.html">About Me</a></li>
+            <li><div class="buttoncontainer"><button id="loadabout">About Me</button></div></li>
             <p>/</p>
-            <li><a href="/roles.html">Current Roles</a></li>
+            <li><div class="buttoncontainer"><button id="loadroles">Current Roles</button></div></li>
             <p>/</p>
-            <li><a href="/career.html">Career Path</a></li>
+            <li><div class="buttoncontainer"></div><button id="loadcareer">Career Path</button></div></li>
         </ul>
+        <button id="loadcontacts" style="display:none;">Load Contacts</button>
+    </div>
 
         <div class="threedots"></div>
 
         <!-- Below is the social media spread-->
 
+        <div id="bio">
+            <main>
+        
         <div class="socials">
             <h3>Contacts:</h3>
             <ul class="sociallist">
@@ -65,16 +60,15 @@
             </a>
             </ul>
         </div>
-
-    </main>
+        
+        </main>
+        </div>
     <div class="sidecolumn"></div>
-</div>
-<div class="threedots" style="margin-top:0px"></div>
+
+<div class="threedots" style="margin-top:20px"></div>
 <footer>
-    <div>
-    <p>Build by <a href="/about.html">Me</a> from scratch in raw HTML and CSS. Deployed through <a href="https://github.com/anthualib/vanitysite">Github</a></p>
-    <p>This website began as a project site for LIS 640 – Web Development, taught by David M. at UW-Madison. The primary goals of this class is to learn the methods and tools for creating/maintaining secure and interactive web content while building fundamental knowledge of HTML, CSS, and javascript.</p>
-    </div>
+    <div id="footercontainer"></div>
 </footer>
 </body>
+<script src="javascript.js"></script>
 </html>

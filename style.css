@@ -41,6 +41,11 @@
     --longshadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
+#bio {
+    margin:0px;
+    padding:0px;
+}
+
 @media screen and (min-width: 780px) {
 
     .mobileinclude {
@@ -56,7 +61,7 @@
         padding: 0%;
         text-align: center;
         font-size: 18px;
-        margin: 2% auto;
+        margin: 0px auto;
         width: 900px;
       }
     
@@ -72,10 +77,10 @@
   }
   
   .sidecolumn {
-    padding: 20px;
+    padding: 10px 30px;
     text-align: center;
+    position: relative; /* Makes the container the reference point for absolute positioning */
     overflow: visible;
-    align-items: baseline;
 }
 
 .columns {
@@ -191,8 +196,8 @@ body {
 .threedots{
     border: 0;
     border-top: 10px dotted lightgrey; /* Dotted line */
-    margin: 50px auto 30px;   
-    width: 75px;            
+    margin: 20px auto 30px;   
+    width: 70px;            
 }
 
 .container {
@@ -275,32 +280,75 @@ nav {
     padding: 0;
     margin: 0;
     display: flex; /* Makes the list horizontal */
-    gap: 50px; /* Adds spacing between items */
+    gap: 30px; /* Adds spacing between items */
     font-family: var(--title-font);
     justify-content: center; /* Centers the entire menu within its container */
     align-items: center; /* Vertically centers items */
     font-size: 24px;
+    text-align: center;
     }
+
+    .buttoncontainer {
+            width:180px;
+            display: flex;
+            text-align: center; 
+            justify-content: center;
+            align-items: center;
+          }
 
     .float {
         top: 80px;
         position: sticky;
         z-index: 10;
         height: 10em;
+        position: fixed;
+        margin: 0px auto;
     }
 
     .jump {
         margin: 0px auto;
-        padding: 20px 20px 0px;
+        padding: 20px 5px 0px;
         font-size: 12px;
         text-align: left;
         line-height: 1.7;
+        position: absolute;   /* Fixes this section in place */
+        width:200px;
     }
     
     .jump ul {
         list-style-type: none; 
         padding: 0px 10px;
  
+    }
+
+
+    button {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        background-color: white;
+        border: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        cursor: pointer;
+        border-bottom: 2px solid var(--orange);
     }
 
   .button {
@@ -316,7 +364,6 @@ nav {
     box-shadow: var(--longshadow);
     cursor: pointer; /* Pointer cursor on hover */
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-
     }
 
 
@@ -455,9 +502,6 @@ footer {
 @media screen and (max-width: 780px) {
     
     .three-column-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Left: 1 unit, Middle: 5 units, Right: 1 unit */
-    gap: 0px; /* Space between columns */
     }
 
     .sidecolumn {
@@ -469,7 +513,7 @@ footer {
         text-align: center;
         font-size: 18px;
         margin: 2% auto;
-        width: 100%;
+        width: 95%;
         max-width: 480px;
     }
     
@@ -608,12 +652,14 @@ footer {
         font-size: 24px;
         }
         .navmenu2 li{
-        
+            width:170px;
         }
         
       .navmenu2 p{
         display:none;
       }
+
+
     
 
       img {
@@ -660,7 +706,6 @@ footer {
         position: sticky;
         z-index: 10;
         top: 40px;
-        text-align: left;
         margin:0px 10px;
         }
     
@@ -689,14 +734,9 @@ footer {
     }
 
     .mobileinclude {
-    }
-
-    .backbutton {
-        position: sticky;
-        z-index: 10;
-        top: 40px;
-        text-align: left;
-        margin:0px 10px;
+        display: flex; /* Enables flexbox for alignment */
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
     }
 
     .borderbox {
@@ -732,14 +772,14 @@ footer {
         border: 0;
         border-top: 10px dotted lightgrey; /* Dotted line */
         margin: 40px auto 30px;   
-        width: 20px;
+        width: 10px;
     }
     
     .threedots{
         border: 0;
         border-top: 10px dotted lightgrey; /* Dotted line */
         margin: 50px auto 30px;   
-        width: 75px;            
+        width: 50px;
     }
 
     .profile-link {
@@ -755,4 +795,49 @@ footer {
         margin: 0px auto; /* Adjust spacing here */
         width: 60px;
     }
+
+    button {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        background-color: white;
+        border: white;
+        cursor: pointer;
     }
+
+
+    .buttoncontainer {
+        width:80px;
+        position: sticky;
+        top: 20px;
+      }
+
+      .backbutton {
+        background-color: var(--orange);
+        color: white;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        z-index: 10;
+        justify-content: center;
+        margin:0px 10px;
+        box-shadow: var(--longshadow)
+    }
+    .backbuttoncontainer{
+        display: flex;
+        justify-content: center;  /* Horizontally centers the button */
+        align-items: center;      /* Vertically centers the button */
+        height: 10vh; 
+    }
+
+      }
