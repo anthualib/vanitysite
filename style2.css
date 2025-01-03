@@ -71,7 +71,7 @@
     /*page formatting*/
     main {
         text-align: center;
-        font-size: 18px;
+        font-size: 24px;
         margin: 0px auto;
         width: 900px;
       }
@@ -212,7 +212,7 @@ body {
 }
 
 .bio{
-    font-size: 24px;
+    font-size: 23px;
     padding: 10px 20px 10px;
 }
 

@@ -1,42 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anthony Hua</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <script src="index.js"></script>
-
-    <header>
-        <nav id="top">
-            <div class="navleft"> <h1 class="logomini"><a href="/index.html">Anthony Hua</a></h1></div>
-            <div class="navright"> 
-                <ul class="navmenu">
-                    <li><a href="/index.html">Profile</a></li>
-                    <li><a href="/writing.html">Writing</a></li>
-                    <li><a href="https://www.library.wisc.edu/" class="bigbutton">UW Libraries</a></button></li>
-                </ul>
-            </div>
-        </nav>    
-    </header>
-<div class="three-column-grid">
-    <div class="sidecolumn"></div>
-    <main>
-        <h1>Writing</h1>
-        <p>My most secret thoughts, published for all the world to see!</p>
-       <div class="blogpost">
-        <h2>
-            <a href="google.com">A title that is used as an example for others to follow</a>
-        </h2>
-        MM/DD/YYYY
-       </div>
-       
-    </main>
-    <div class="sidecolumn"></div>
-</div>
-
-</body>
-</html>
+---
+layout: default
+title: "Writing"
+permalink: /writing
+---
+    <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>  <!-- Link to the full post -->
+            <small>Posted on {{ post.date | date: "%B %d, %Y" }}</small>
+            <p>{{ post.excerpt }}</p>  <!-- Show a short excerpt from the post -->
+          </li>
+        {% endfor %}
+      </ul>
