@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main  # Change this to your default Git branch
   repo: anthualib/vanitysite
   api_root: https://api.github.com
