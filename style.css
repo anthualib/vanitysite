@@ -159,15 +159,19 @@ h4 {
     font-size: 18x;
 }
 
-ul {
-    list-style-position: inside; /* Ensures bullet points are inside the padding */
-    text-align: left;            /* Aligns text to the left */
-    padding-left: 20px;          /* Adds padding to ensure proper alignment */
-    margin: 0;                   /* Adjusts margin as needed */
+.centered-list {
+    text-align: center; /* Centers the list as a block */
   }
   
-  li {
-    text-align: left;            /* Ensures individual list items are left-aligned */
+  ul {
+    display: inline-block; /* Allows the list to shrink-wrap around its items */
+    text-align: left; /* Aligns the text and bullets to the left inside the block */
+    padding: 0; /* Removes extra padding around the list */
+    margin: 0; /* Removes default margin */
+  }
+  
+  ul li {
+    list-style-position: inside; /* Ensures the bullets stay aligned with text */
   }
 
 .logo a {
