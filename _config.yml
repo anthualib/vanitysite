@@ -7,27 +7,15 @@ url: "https://huaanthony.com/" # Your GitHub Pages URL (or custom domain)
 # Markdown processing
 markdown: kramdown                # Use kramdown for Markdown processing
 
-# Directory settings
-source: .                         # Use the current directory as the source
-destination: ../docs/blog         # Output the blog to the GitHub Pages `docs/blog` folder
-
 # Permalinks
-permalink: /:categories/:title/   # URL structure for posts
+permalink: /blog/:title/          # Customize post URLs  # URL structure for posts
 
-# Collections
-collections:
-  posts:
-    output: true                  # Enable posts output
-
-# Defaults
 defaults:
   - scope:
-      path: "_posts"             # Apply defaults only to posts
+      path: "_posts"
     values:
-      layout: post
-      author: "Your Name"
+      layout: post              # Default layout for posts
 
 # Exclude non-blog parts of your site
 exclude:
   - ../*                         # Prevent processing of non-blog files
-  - .nojekyll                    # Ignore the `.nojekyll` file
