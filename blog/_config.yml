@@ -1,0 +1,4 @@
+source: .
+destination: ../docs/blog
+permalink: /:categories/:title/
+markdown: kramdown
