@@ -1,8 +1,8 @@
 # Site settings
 title: "Anthony's Thoughts"                  # The title of your blog
 description: "A blog about XYZ."  # A short description of your blog
-baseurl: "/blog"                  # Subdirectory where your blog resides
 url: "https://huaanthony.com/" # Your GitHub Pages URL (or custom domain)
+baseurl: ""
 
 # Markdown processing
 markdown: kramdown                # Use kramdown for Markdown processing
@@ -18,4 +18,4 @@ defaults:
 
 # Exclude non-blog parts of your site
 exclude:
-  - ../*                         # Prevent processing of non-blog files
+  - /index.html                        # Prevent processing of non-blog files
